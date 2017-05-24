@@ -38,16 +38,36 @@ __Table 1.__ Parameter estimates and standard errors (based on sandwich variance
 
 Since the three treatments were randomly assigned at baseline, the treatment effect was not included in the linear spline GEE model.
 (Intercept) indicates that the EET effect at baseline.
-(𝑥)! = 𝑥 if 𝑥>0, 0 otherwise.
+
+(𝑥)+ = 𝑥 if 𝑥>0, 0 otherwise.
+
 SE : sandwich variance estimator.
+
 Estimated scale parameter: 𝜙 = 3.21. Estimated working correlation: 𝛼 = 0.57.
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
 
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         || 
 
+In Table 1, the first three estimates are the common estimates of the mean pain score, comparing both CBT and EDU to EET, since EET was a reference treatment. The rest of estimates were interpreted as the mean difference of pain score in each treatment (CBT and EDU) compared to EET at 3 months and 6 months follow-up. For example, the expected mean pain score at baseline in EET is 5.39 (se = 0.11). The estimate for Time variable (-0.31, se = 0.07) is the expected mean change of pain score comparing 3 months follow up to baseline, in EET. On the other hand, the estimate for Time × CBT (0.10, se = 0.09) is the expected mean difference of pain score comparing CBT to EET at 3 months follow-up. In detail, the parameter of the marginal model for comparison was summarized separately. By the way, Table 1 also addresses that the EET has significant effect to the pain score at baseline, 3 months and 6 months follow-up (p- values < 0.001). In order to test the efficacy of EET comparing both CBT and EDU to EET, the estimates of slope changes over time were summarized in Table 2 and the comparison of efficacy of EET to others was tested with nested GEE models. In Table 2, the slope for each treatments change over time, which demonstrated consistent patterns in Figure 1, and EET has the most sharp decreasing pattern in the pain score from baseline to 3 months follow-up (-0.31) and it recovered faster than other treatments to 9 months follow-up (0.22). Finally, the efficacy of EET compared to CBT was not significant (p-value = 0.530), but it was significant to EDU (p-value = 0.007).
+
+
+__Table 2.__ Estimated slope change and the test for efficacy of CBT and EDU treatments to EET.
+| Treatment | The change of slope Baseline to 3 months | The change of slope 3 months to 9 months | EET vs. Treatment p-value |
+|-----------|------------------------------------------|------------------------------------------|---------------------------|
+| EET       | -0.31                                    | 0.22                                     | -                         |
+| CBT       | -0.21                                    | 0.15                                     | 0.530                     |
+| EDU       | -0.05                                    | -0.01                                    | 0.007                     |
+
+For diagnostics, the mean model assumption was checked through residual analysis, which were shown in Appendix Figure A1. Moreover, the percentages of missingness were calculated for each variable and they were assumed to be no pattern in the missingness in order to apply the GEE model.
+
+## Discussion
+
+The linear spline GEE analysis concluded that EET was beneficial to reduce the chronic pain for FM from the baseline to post-treatment, but the efficacy disappeared at 6 months follow-up. Moreover, the efficacy of EET did not show a significant difference to CBT, however, showed the significant difference to EDU.
+There were multiple limitations in this longitudinal analysis. Firstly, the follow-up period was not long and repeated measures were only collected twice. If the longer periods of observations were available, then it would give more reliable results. Secondly, there would be a selection bias that might come from the nature of the RCT design. Since the patients were filled up each treatment group according to first-come first-serve way, it could possibly contaminate the structure of correlated measurements and thus, randomization might be threatened. Even though the RCT would try to recruit more patients or increase the number of groups in order to remove the possible selection bias, there would be trade-off between the two ways due to the limit of budgets or the decrease of analysis power. Besides, it is possible to exist unobserved confounders. During the 8 therapy sessions, patients could be affected from other environmental components, which were not controlled by this RCT. Lastly, subjective ratings for the symptoms are not robust and therefore, it would be good to incorporate the individual’s susceptibility variable in the model in order to compensate the individual variations.
+Not only the limitation in the dataset, but also there were two concerns in the analysis. From the property of the GEE, using the sandwich estimator may lose the statistical power if the covariance was correctly specified. Secondly, FM symptoms were dependent to individuals and within- subject variations could be large. But, the marginal model, like GEE, did not consider subject’s level variation.
+FM is a significant quality of life issue for people suffering from the chronic pain. In this study, I found that the emotional factor helped to reduce patients’ pain in a short-term period and the better efficacy than the EDU therapy. Longer follow-up and incorporating other risk factors can confirm the durability of these findings.
+
+## References
+1. Williams & Craig, (2016). Updating the definition of pain. Pain. 157, 2420-2423
+2. Roditi, D., & Robinson, M. E. (2011). The role of psychological interventions in the management of patients with chronic pain. Psychology Research and Behavior Management, 4, 41–49. <http://doi.org/10.2147/PRBM.S15375>
+3. Lumley, M. & Williams, D.A. (2013?). R01 AR057808 A1: Emotional Exposure and Cognitive Behavioral Therapies for Fibromyalgia
+4. Søren Højsgaard, (2016). ‘geepack’ packages of version 1.2-1 in R to solve generalized estimating equation.
