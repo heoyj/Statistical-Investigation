@@ -32,5 +32,6 @@ In order to make easy interpretations, EET was chosen to be a reference treatmen
 | (Time − 3)+ × CBT| -0.06 | 0.08 | 0.08 | (-0.98 , -0.67) | 0.411 |
 | Time × EDU  | 0.26 | 0.09 | 8.27 | (2.70 , 3.05) | 0.004 |
 |(Time − 3)+ × EDU | -0.23 | 0.08 | 9.34 | (-3.20 , -2.91) | 0.002 |
-| -----------|| -----------|| -----------|| -----------|| -----------|| -----------|
+| -----------| -----------| -----------| -----------| -----------| -----------|
+
 __Table 1.__ Parameter estimates and standard errors (based on sandwich variance estimator) from marginal regression model for the pain score.
