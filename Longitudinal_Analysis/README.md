@@ -35,10 +35,19 @@ __Table 1.__ Parameter estimates and standard errors (based on sandwich variance
 | Time × EDU  | 0.26 | 0.09 | 8.27 | (2.70 , 3.05) | 0.004 |
 |(Time − 3)+ × EDU | -0.23 | 0.08 | 9.34 | (-3.20 , -2.91) | 0.002 |
 
+
 Since the three treatments were randomly assigned at baseline, the treatment effect was not included in the linear spline GEE model.
 (Intercept) indicates that the EET effect at baseline.
-(𝑥)! = 𝑥if𝑥>0,0otherwise.
+(𝑥)! = 𝑥 if 𝑥>0, 0 otherwise.
 SE : sandwich variance estimator.
 Estimated scale parameter: 𝜙 = 3.21. Estimated working correlation: 𝛼 = 0.57.
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         || 
 
