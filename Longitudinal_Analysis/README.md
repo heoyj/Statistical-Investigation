@@ -52,6 +52,7 @@ In Table 1, the first three estimates are the common estimates of the mean pain 
 
 
 __Table 2.__ Estimated slope change and the test for efficacy of CBT and EDU treatments to EET.
+
 | Treatment | The change of slope Baseline to 3 months | The change of slope 3 months to 9 months | EET vs. Treatment p-value |
 |-----------|------------------------------------------|------------------------------------------|---------------------------|
 | EET       | -0.31                                    | 0.22                                     | -                         |
