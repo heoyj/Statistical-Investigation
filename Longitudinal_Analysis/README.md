@@ -23,6 +23,8 @@ The mean trend plots for treatments suggest a linear spline GEE model for the RC
 
 In order to make easy interpretations, EET was chosen to be a reference treatment. For a covariance structure, an exchangeable covariance structure was selected based on empirical correlation matrix of pain scores over time. The ‘geeglm’ function from ‘geepack’ package in R was applied to estimate parameters with its standard error based on a sandwich variance estimator, which are shown in Table 1.
 
+__Table 1.__ Parameter estimates and standard errors (based on sandwich variance estimator) from marginal regression model for the pain score. 
+
 | Variable   |   Estimate   |     SE    |   Chi-square statistic   | Wald 95% CI   |   p-value   | 
 | -----------|:------------:|:------------:|:------------:|:------------:|:------------:|
 |(Intercept) | 5.39  | 0.11 | 2520.99 | (50.00 , 50.42) | < 0.001 |
@@ -32,6 +34,11 @@ In order to make easy interpretations, EET was chosen to be a reference treatmen
 | (Time − 3)+ × CBT| -0.06 | 0.08 | 0.08 | (-0.98 , -0.67) | 0.411 |
 | Time × EDU  | 0.26 | 0.09 | 8.27 | (2.70 , 3.05) | 0.004 |
 |(Time − 3)+ × EDU | -0.23 | 0.08 | 9.34 | (-3.20 , -2.91) | 0.002 |
-| -----------| -----------| -----------| -----------| -----------| -----------|
 
-__Table 1.__ Parameter estimates and standard errors (based on sandwich variance estimator) from marginal regression model for the pain score.
+Since the three treatments were randomly assigned at baseline, the treatment effect was not included in the linear spline GEE model.
+(Intercept) indicates that the EET effect at baseline.
+(𝑥)! = 𝑥if𝑥>0,0otherwise.
+SE : sandwich variance estimator.
+Estimated scale parameter: 𝜙 = 3.21. Estimated working correlation: 𝛼 = 0.57.
+
+
