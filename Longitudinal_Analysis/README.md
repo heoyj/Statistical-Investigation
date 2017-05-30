@@ -1,4 +1,4 @@
-# Longitudinal Analysis
+# Longitudinal Analysis (Panel Data Analysis)
 
 ## Analyze Efficacy of Emotional Exposure Therapy (EET) for Fibromyalgia (FM) in Randomized Clinical Trial
 
