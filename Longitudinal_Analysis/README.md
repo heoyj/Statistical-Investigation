@@ -47,13 +47,13 @@ Estimated scale parameter: 𝜙 = 3.21. Estimated working correlation: 𝛼 = 0.
 In Table 1, the first three estimates are the common estimates of the mean pain score, comparing both CBT and EDU to EET, since EET was a reference treatment. The rest of estimates were interpreted as the mean difference of pain score in each treatment (CBT and EDU) compared to EET at 3 months and 6 months follow-up. For example, the expected mean pain score at baseline in EET is 5.39 (se = 0.11). The estimate for Time variable (-0.31, se = 0.07) is the expected mean change of pain score comparing 3 months follow up to baseline, in EET. On the other hand, the estimate for Time × CBT (0.10, se = 0.09) is the expected mean difference of pain score comparing CBT to EET at 3 months follow-up. In detail, the parameter of the marginal model for comparison was summarized separately. By the way, Table 1 also addresses that the EET has significant effect to the pain score at baseline, 3 months and 6 months follow-up (p- values < 0.001). In order to test the efficacy of EET comparing both CBT and EDU to EET, the estimates of slope changes over time were summarized in Table 2 and the comparison of efficacy of EET to others was tested with nested GEE models. In Table 2, the slope for each treatments change over time, which demonstrated consistent patterns in Figure 1, and EET has the most sharp decreasing pattern in the pain score from baseline to 3 months follow-up (-0.31) and it recovered faster than other treatments to 9 months follow-up (0.22). Finally, the efficacy of EET compared to CBT was not significant (p-value = 0.530), but it was significant to EDU (p-value = 0.007).
 
 
-__Table 2.__ Estimated slope change and the test for efficacy of CBT and EDU treatments to EET.
-
 | Treatment | The change of slope <br/> Baseline to 3 months | The change of slope<br/> 3 months to 9 months | EET vs. Treatment<br/> p-value |
 |-----------|:----------------------------------------:|:----------------------------------------:|:-------------------------:|
 | EET       | -0.31                                    | 0.22                                     | -                         |
 | CBT       | -0.21                                    | 0.15                                     | 0.530                     |
 | EDU       | -0.05                                    | -0.01                                    | 0.007                     |
+
+__Table 2.__ Estimated slope change and the test for efficacy of CBT and EDU treatments to EET.
 
 For diagnostics, the mean model assumption was checked through residual analysis, which were shown in Appendix Figure A1. Moreover, the percentages of missingness were calculated for each variable and they were assumed to be no pattern in the missingness in order to apply the GEE model.
 
