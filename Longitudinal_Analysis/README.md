@@ -8,7 +8,7 @@ For more information about pain, please refer to this paper : _Merskey, Harold E
 
 Among the chronic pain, this project specifically focused on Fibromyalgia(FM) [2](http://www.mayoclinic.org/diseases-conditions/fibromyalgia/home/ovc-20317786). FM causes widespread musculoskeletal pain accompanied by fatigue, sleep, memory and mood issues, but cannot be cured yet. There has been many attempts to help relieve those pains from the cognitive and behavioral perspectives. However, the new definition of pain encompasses even emotional forms of pain. In order to compare the effectiveness of emotional intervention, a Multi-site Randomized Controlled Trial for Fibromyalgia was conducted by Lumley M.A. from the Wayne State University, funded by NIH. [3](http://grantome.com/grant/NIH/R01-AR057808-02)
 
-Using the dataset collected from this RCT, this project investigated the efficacy of an emotional therapy compared to two conventional interventions for FM in terms of pain. The emotional therapy is called Emotional Exposure Therapy (EET), which intended to reduce stress. The others are Cognitive-Behavioral Therapy (CBT) and FM Education Control (EDU). For more information, see [Analysis_Result_Report.md] (https://github.com/heoyj/Statistical-Investigation/blob/master/Longitudinal_Analysis/Analysis_Result_Report.md).
+Using the dataset collected from this RCT, this project investigated the efficacy of an emotional therapy compared to two conventional interventions for FM in terms of pain. The emotional therapy is called Emotional Exposure Therapy (EET), which intended to reduce stress. The others are Cognitive-Behavioral Therapy (CBT) and FM Education Control (EDU). For more information, see [Analysis Result Report] (https://github.com/heoyj/Statistical-Investigation/blob/master/Longitudinal_Analysis/Analysis_Result_Report.md).
 
 ## 2. Data
 
@@ -28,6 +28,6 @@ Written in R
 
 ## 4. Analysis Result
 
-See [Analysis_Result_Report.md] (https://github.com/heoyj/Statistical-Investigation/blob/master/Longitudinal_Analysis/Analysis_Result_Report.md)
+See [Analysis Result Report] (https://github.com/heoyj/Statistical-Investigation/blob/master/Longitudinal_Analysis/Analysis_Result_Report.md).
 
 
