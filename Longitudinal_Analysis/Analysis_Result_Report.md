@@ -35,29 +35,25 @@ In order to make easy interpretations, EET was chosen to be a reference treatmen
 
 __Table 1.__ Parameter estimates and standard errors (based on sandwich variance estimator) from marginal regression model for the change in pain score from baseline. 
 
-Since the three treatments were randomly assigned at baseline, the treatment effect was not included in the linear spline GEE model.
+Since the three treatments were randomly assigned at baseline, the treatment effect was not included in the linear spline GEE model. Moreover, an intercept was excluded to make reasonable comparison across treatments, that is, the primary outcome is the change of pain score from baseline and the change should be zero across treatments at baseline. 
 (𝑥)+ = 𝑥 if 𝑥>0, 0 otherwise.
 SE : sandwich variance estimator.
 Estimated scale parameter: 𝜙 = 1.96. Estimated working correlation: 𝛼 = 0.30.
 
 
 
-In Table 1, the first two estimates are the common estimates of the mean change in pain score, comparing both CBT and EDU to EET, since EET was a reference treatment. The rest of estimates were interpreted as the mean difference of pain score change in each treatment (CBT and EDU) compared to EET at 3 months and 9 months from baseline. For example, the expected mean pain score at baseline in EET is 5.39 (se = 0.11). The estimate for Time variable (-0.31, se = 0.07) is the expected mean change of pain score comparing 3 months follow up to baseline, in EET. On the other hand, the estimate for Time × CBT (0.10, se = 0.09) is the expected mean difference of pain score comparing CBT to EET at 3 months follow-up. In detail, the parameter of the marginal model for comparison was summarized separately. By the way, Table 1 also addresses that the EET has significant effect to the pain score at baseline, 3 months and 6 months follow-up (p- values < 0.001). In order to test the efficacy of EET comparing both CBT and EDU to EET, the estimates of slope changes over time were summarized in Table 2 and the comparison of efficacy of EET to others was tested with nested GEE models. In Table 2, the slope for each treatments change over time, which demonstrated consistent patterns in Figure 1, and EET has the most sharp decreasing pattern in the pain score from baseline to 3 months follow-up (-0.31) and it recovered faster than other treatments to 9 months follow-up (0.22). Finally, the efficacy of EET compared to CBT was not significant (p-value = 0.530), but it was significant to EDU (p-value = 0.007).
+In Table 1, each estimate means a mean slope in Figure 1 in time segments. Since EET was a reference treatment, the first two estimates are the common estimates of the mean of change in pain score at 3 or 9 months from baseline, comparing both CBT and EDU to EET. The rest of estimates were interpreted as the mean difference of change in pain score from baseline in each treatment (CBT and EDU) compared to EET at 3 or 9 months from baseline. For example, the expected mean of pain score in EET at 3 months decreases 0.93 (se = 0.08) compared to baseline. On the other hand, the estimate for Time × CBT (0.18, se = 0.10) is the expected mean difference of change in pain score comparing CBT to EET at 3 months follow-up from baseline. 
 
 
-| Treatment | The change of slope <br/> Baseline to 3 months | The change of slope<br/> 3 months to 9 months | EET vs. Treatment<br/> p-value |
-|-----------|:----------------------------------------:|:----------------------------------------:|:-------------------------:|
-| EET       | -0.31                                    | 0.22                                     | -                         |
-| CBT       | -0.21                                    | 0.15                                     | 0.530                     |
-| EDU       | -0.05                                    | -0.01                                    | 0.007                     |
+By the way, Table 1 addresses that there is at least one treatment, which shows different efficacy in reduction of pain among three treatments. In order to see which treatments show different efficacy, post-hoc analysis was done and it resulted in EET had no significant difference in reduction of pain (p-value = 0.40) compared to CBT, but significant difference (p-value = 0.02) compared to EDU. Figure 1 shows consistent interpretation of this result. 
 
-__Table 2.__ Estimated slope change and the test for efficacy of CBT and EDU treatments to EET.
 
 For diagnostics, the mean model assumption was checked through residual analysis, which were shown in Appendix Figure A1. Moreover, the percentages of missingness were calculated for each variable and they were assumed to be no pattern in the missingness in order to apply the GEE model.
 
+
 ## Discussion
 
-The linear spline GEE analysis concluded that EET was beneficial to reduce the chronic pain for FM from the baseline to post-treatment, but the efficacy disappeared at 6 months follow-up. Moreover, the efficacy of EET did not show a significant difference to CBT, however, showed the significant difference to EDU.
+The linear spline GEE analysis concluded that EET was beneficial to reduce the chronic pain for FM compared to EDU, but not enough to say that EET is beneficial to CBT. 
 
 There were multiple limitations in this longitudinal analysis. Firstly, the follow-up period was not long and repeated measures were only collected twice. If the longer periods of observations were available, then it would give more reliable results. Secondly, there would be a selection bias that might come from the nature of the RCT design. Since the patients were filled up each treatment group according to first-come first-serve way, it could possibly contaminate the structure of correlated measurements and thus, randomization might be threatened. Even though the RCT would try to recruit more patients or increase the number of groups in order to remove the possible selection bias, there would be trade-off between the two ways due to the limit of budgets or the decrease of analysis power. Besides, it is possible to exist unobserved confounders. During the 8 therapy sessions, patients could be affected from other environmental components, which were not controlled by this RCT. Lastly, subjective ratings for the symptoms are not robust and therefore, it would be good to incorporate the individual’s susceptibility variable in the model in order to compensate the individual variations.
 
