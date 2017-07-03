@@ -25,7 +25,7 @@ In order to make easy interpretations, EET was chosen to be a reference treatmen
 
 
 | Variable   |   Estimate   |     SE     |   p-value   | 
-| -----------|:------------:|:------------:|:------------:|:------------:|:------------:|
+| -----------|:------------:|:------------:|:------------:|
 | Time             | -0.31 | 0.08 | < 0.001 |
 | (Time − 3)+      | 0.22  | 0.06 | < 0.001 |
 | Time × CBT       | 0.06  | 0.10 | 0.539   |
