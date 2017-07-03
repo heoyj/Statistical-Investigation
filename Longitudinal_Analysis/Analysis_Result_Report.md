@@ -16,7 +16,7 @@ This clinical trial design was a 2-site, 3-arms, allegiance-controlled RCT. At t
 
 At baseline, each demographic variable were examined across treatments in order to check the validity of randomization. According to Appendix Table A1, FM patients were randomly assigned to each treatment arm. Moreover, the effect of different site was tested across treatment arms and there was no evidence to say that interventions were different from sites (p-value = 0.2). This implied that the stratification was not necessary in modeling process. Figure 1 suggests that a linear spline pattern for each treatment over time, therefore, the linear spline GEE model was selected to model the dataset. Based on the validity of randomization and the spline pattern for the repeated measurements of pain score, the linear spline GEE model was fitted to the dataset.
 
-![Figure 1.](https://cloud.githubusercontent.com/assets/16962486/26425052/60643540-4088-11e7-9cf1-ac95263fa0d8.jpeg)
+![Figure 1.](https://github.com/heoyj/Statistical-Investigation/issues/2)
 
 __Figure 1.__ Mean trend plots of the pain score for three treatments (EET, CBT and EDU).
 The mean trend plots for treatments suggest a linear spline GEE model for the RCT. Time (Baseline, 3 months and 9 months) indicates that baseline, post-treatment and 6 months follow-up, respectively. EET and CBT show decreasing first and increasing again over time, whereas EDU shows decreasing pattern over time.
