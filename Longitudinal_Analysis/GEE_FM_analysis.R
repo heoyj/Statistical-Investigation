@@ -1,17 +1,10 @@
-# BIOS699_Pr2_Git
-
-#### BIOS 699 Project 2 ####
-### edited by YJH for uploading at Github 
-
 ##### Data import -----
-setwd("/Users/youngjinheo/Dropbox/2017_winter/BIOS699_Biostatistical_Investigation/BIOS699_02_Project/BIOS699_Project2/")
+setwd("/Directory_PATH/")
 
-# library(gdata) # read csv file
 library(ggplot2) # plot
 library(geepack) # fit GEE model
 library(plyr) # ddply
 library(BaylorEdPsych) # test MCAR
-# library(mvnmle) # test MCAR
 library(boot)
 
 
